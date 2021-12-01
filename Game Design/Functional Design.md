@@ -20,8 +20,8 @@ Objectives:
 
 ## Game-flowchart:
 On opening the game:
-![Game open](gamestart.png)
+![Game open](./Assets/gamestart.png)
 <br>
 
 On level load:
-![Game loop](gameloop.png)
+![Game loop](./Assets/gameloop.png)

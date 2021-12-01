@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Game Design Document.md",
+            "file": "Functional Design.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Game Design Document.md",
+                "file": "Functional Design.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,9 +88,9 @@
   },
   "active": "5636742f5dfbb6ae",
   "lastOpenFiles": [
-    "Game Design Document.md",
     "Functional Design.md",
-    "assets/gameloop.png",
+    "Game Design Document.md",
+    "Assets/gameloop.png",
     "Requirements BUAS and game idea.md",
     "MP1.md",
     "Debrief.md"

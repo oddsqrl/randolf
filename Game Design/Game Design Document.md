@@ -79,7 +79,7 @@ Multiplayer
 
 ## Style
 ### Moodboard:
-![Moodboard](moodboard.png)
+![Moodboard](./Assets/moodboard.png)
 
 ### Colour palette:
-![Colours](ColourVacuumPalette.png)
+![Colours](./Assets/ColourVacuumPalette.png)
