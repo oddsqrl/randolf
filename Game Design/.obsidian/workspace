@@ -1,0 +1,98 @@
+{
+  "main": {
+    "id": "a2da0e40b2976bd0",
+    "type": "split",
+    "children": [
+      {
+        "id": "5636742f5dfbb6ae",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Functional Design.md",
+            "mode": "preview"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "19c343096550b12a",
+    "type": "split",
+    "children": [
+      {
+        "id": "ccab0b39f1925707",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1e22253cfff67ccd",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "938565f8d924b76d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 301
+  },
+  "right": {
+    "id": "6c02c000820d9a5e",
+    "type": "split",
+    "children": [
+      {
+        "id": "2b782b31b548cb8a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b3efc0993d0467a8",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Functional Design.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "5636742f5dfbb6ae",
+  "lastOpenFiles": [
+    "Functional Design.md",
+    "Game Design Document.md",
+    "Assets/gameloop.png",
+    "Requirements BUAS and game idea.md",
+    "MP1.md",
+    "Debrief.md"
+  ]
+}
