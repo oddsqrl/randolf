@@ -122,7 +122,7 @@ Art: Lowpoly, brightly coloured, simplistic.
 <br>
 
 ### Map design:
-**Style**: Crowded
+**Style**: Crowded.
 **Make interesting**: Physics object placement, Shortcuts.
 **Planned route**: Start upstairs, run through the bedroom > hallway > Stairs > Kitchen > Living room > Hallway to front door > Front garden > outside garder (win).
 **Shortcuts**: 
