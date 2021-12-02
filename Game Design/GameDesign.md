@@ -10,7 +10,7 @@
 <br>
 
 ## general
-<h4 style="color: rgb(190, 190, 190);">Concept</h4>
+<h4 style="color: rgb(132, 168, 192);">Concept</h4>
 
 You play from a dogs point of view. A roomba takes over an old style vacuum cleaner and begins chasing you. There is only one way out of the building to safety and there are various hurdles in the way.
 
@@ -33,7 +33,7 @@ The story is that the roomba is killing you... that's it. Story writing :cool
 
 **Conflict**: Getting stuck on map, nearing vacuum cleaner, finding the right path.
 **Outcomes**: Survival basis.
-<h4 style="color: rgb(190, 190, 190);">Scope</h4>
+<h4 style="color: rgb(132, 168, 192);">Scope</h4>
 
 This includes:
 - An Unity Engine based game.
@@ -52,7 +52,7 @@ Needed for this project:
 - Free range for experimentation with level design, features and pacing.
 <br>
 
-<h4 style="color: rgb(190, 190, 190);">Formal Elements</h4>
+<h4 style="color: rgb(132, 168, 192);">Formal Elements</h4>
 
 **Narrative:** Play, Challenge.
 **Players:** Single-player.
@@ -63,7 +63,7 @@ Needed for this project:
 **Resources:** Physics objects (push out of the way).
 <br>
 
-<h4 style="color: rgb(190, 190, 190);">Controls</h4>
+<h4 style="color: rgb(132, 168, 192);">Controls</h4>
 
 | Control     | Keyboard | Controller | Ingame action |
 | :----: |    :----:   | :----: |  :---:  |
@@ -72,7 +72,7 @@ Needed for this project:
 | Jump  |  Space | Primary button | Character jumps up and get's dragged down by gravity |
 <br>
 
-<h4 style="color: rgb(190, 190, 190);">Rules</h4>
+<h4 style="color: rgb(132, 168, 192);">Rules</h4>
 
 - Can't go through map.
 - Can push physics objects.
@@ -82,11 +82,11 @@ Needed for this project:
 - The vacuum follows the player.
 <br>
 
-<h4 style="color: rgb(190, 190, 190);">Frameworks</h4>
+<h4 style="color: rgb(132, 168, 192);">Frameworks</h4>
 Unity (C#).
 <br>
 
-<h4 style="color: rgb(190, 190, 190);">Requirements</h4>
+<h4 style="color: rgb(132, 168, 192);">Requirements</h4>
 installation on the PC.
 <br>
 
@@ -152,14 +152,14 @@ Bottom layout:
 <br>
 
 ### Audio and sound effects:
-<h4 style="color: rgb(190, 190, 190);">Sound effects</h4>
+<h4 style="color: rgb(132, 168, 192);">Sound effects</h4>
 Style: Simplistic, heigh notes.
 
 - Menu onClick sound.
 - Level switch sound effect.
 - Game Over Sound effect.
 
-<h4 style="color: rgb(190, 190, 190);">Music</h4>
+<h4 style="color: rgb(132, 168, 192);">Music</h4>
 Style: Upbeat, fast paced, Hyper.
 
 - Menu background music.
@@ -246,7 +246,7 @@ Cinemachine
 TextMeshPro
 ProBuilder
 
-<h4 style="color: rgb(190, 190, 190);">Classes</h4>
+<h4 style="color: rgb(132, 168, 192);">Classes</h4>
 **AIMovement.cs**:
 Has the navmesh of the level on it.
 Has the dog (target) transform/location on it.
