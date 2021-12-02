@@ -122,7 +122,7 @@ Art: Lowpoly, brightly coloured, simplistic.
 <br>
 
 ### Map design:
-**Style**: Crowded
+**Style**: Crowded\
 **Make interesting**: Physics object placement, Shortcuts.
 **Planned route**: Start upstairs, run through the bedroom > hallway > Stairs > Kitchen > Living room > Hallway to front door > Front garden > outside garder (win).
 **Shortcuts**: 
@@ -240,11 +240,11 @@ Not using Unity ECS as I don't need networking nor do I need the optimisations f
 Physics handled by Unity RigidBody for simplicity purposes.
 
 **Unity packages**:
-Input System
-NavMesh
-Cinemachine
-TextMeshPro
-ProBuilder
+- Input System
+- NavMesh
+- Cinemachine
+- TextMeshPro
+- ProBuilder
 
 <h4 style="color: rgb(132, 168, 192);">Classes</h4>
 **AIMovement.cs**:
