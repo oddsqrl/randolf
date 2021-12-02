@@ -22,9 +22,11 @@ The story is that the roomba is killing you... that's it. Story writing :cool
 ## Indepth-Information
 **Platform**: PC (Windows 10). Other platforms might get ports.
 **Target demographic/audience**: 13+, Is paced for fun and hectic chaos. 
-**Players**: Singeplayer.
+**Players**: Singeplayer, First person.
 **Objective**: Get out of the level and into the next level.
 **Rewards**: Level completion.
+**Difficulty**: normal, one level
+**Scoring system**: Based on either speed of level completion (time trial) and/or level completion.
 
 **Revenue-model**: Free, Donations.
 **Advertising**: None, face-to-face.
@@ -43,7 +45,7 @@ This doesn't include:
 - Professional grade sound design.
 
 Needed for this project:
-- One Developer with interest in Art, Sound design, Music.
+- One Developer with interest in Art, Sound design, Music. Animation is a plus but these could be done in engine.
 - A PC capable of running [Unity](https://unity.com), [Blender](https://blender.org/) and a wanted DAW (Likely [FL Studio](https://image-line.com) or [Ableton](https://ableton.com) as they are the market standerd).
 - A fitting IDE (integrated development environment) for coding purposes. Likely Jetbrains [Rider](https://www.jetbrains.com/rider/) or [Visual Studio Code](https://visualstudio.microsoft.com/).
 - A PC capable of making a game build.
@@ -108,13 +110,61 @@ Discovery: Learn how and what to use in situations, Discover the arena and racet
 - Physics objects.
 <br> 
 
+
 ## Style
+Art: Lowpoly, brightly coloured, simplistic.
+
 ### Moodboard:
 ![Moodboard](./Assets/moodboard.png)
 
 ### Colour palette:
 ![Colours](./Assets/ColourVacuumPalette.png)
 <br>
+
+### Map design:
+**Style**: Crowded
+**Make interesting**: Physics object placement, Shortcuts.
+**Planned route**: Start upstairs, run through the bedroom > hallway > Stairs > Kitchen > Living room > Hallway to front door > Front garden > outside garder (win).
+**Shortcuts**: 
+- bedroom to stairs (corner skip) by jumping through a hole.
+- Stair to living room by jumping through vent.
+
+**Vacuum on shortcuts**: If a player takes a shortcut, speed up.
+
+**Level design lookout**: Make doors glow, obstruct shortcuts but make them visible by giving them a certain style of placement (must seem a bit off, like skewed). Check colour of objects, make similar use objects have a defined colour so that the player sees that a physics object is a physics object faster.
+
+
+Level:
+- White squares: rooms.
+- Yellow squares: doors.
+- Pink hexagon: spawnpoint.
+- Dark blue circle with white ring: Stairs (links between top and bottom).
+- Red Square: Closet with vacuum in it.
+- Gray circle: Hole in wall shortcut.
+- Gray Square: Vent/top of lamp shortcut.
+- Black: House/Inside
+- Light blue: Fence (outside)
+
+Top layout:
+![Moodboard](./Assets/top-level.png)
+Bottom layout:
+![Moodboard](./Assets/bottom-level.png)
+<br>
+
+### Audio and sound effects:
+<h4 style="color: rgb(190, 190, 190);">Sound effects</h4>
+Style: Simplistic, heigh notes.
+
+- Menu onClick sound.
+- Level switch sound effect.
+- Game Over Sound effect.
+
+<h4 style="color: rgb(190, 190, 190);">Music</h4>
+Style: Upbeat, fast paced, Hyper.
+
+- Menu background music.
+- Ingame soundtrack.
+
 
 ## MoSCoW:
 **Must**:
