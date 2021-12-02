@@ -20,13 +20,13 @@ The story is that the roomba is killing you... that's it. Story writing :cool
 <br>
 
 ## Indepth-Information
-**Platform**: PC (Windows 10). Other platforms might get ports.
-**Target demographic/audience**: 13+, Is paced for fun and hectic chaos. 
-**Players**: Singeplayer, First person.
-**Objective**: Get out of the level and into the next level.
-**Rewards**: Level completion.
-**Difficulty**: normal, one level
-**Scoring system**: Based on either speed of level completion (time trial) and/or level completion.
+**Platform**: PC (Windows 10). Other platforms might get ports. 
+**Target demographic/audience**: 13+, Is paced for fun and hectic chaos.  
+**Players**: Singeplayer, First person. 
+**Objective**: Get out of the level and into the next level. 
+**Rewards**: Level completion. 
+**Difficulty**: normal, one level. 
+**Scoring system**: Based on either speed of level completion (time trial) and/or level completion. 
 
 **Revenue-model**: Free, Donations.
 **Advertising**: None, face-to-face.
@@ -54,11 +54,11 @@ Needed for this project:
 
 <h4 style="color: rgb(132, 168, 192);">Formal Elements</h4>
 
-**Narrative:** Play, Challenge.
-**Players:** Single-player.
+**Narrative:** Play, Challenge. 
+**Players:** Single-player. 
 **Player mode:** Casual, Race.  
 **Premises:** Story, Introduction, Logo, Launch page.  
-**Objectives:** Get out of the current room.
+**Objectives:** Get out of the current room. 
 
 **Resources:** Physics objects (push out of the way).
 <br>
@@ -122,14 +122,14 @@ Art: Lowpoly, brightly coloured, simplistic.
 <br>
 
 ### Map design:
-**Style**: Crowded.
-**Make interesting**: Physics object placement, Shortcuts.
-**Planned route**: Start upstairs, run through the bedroom > hallway > Stairs > Kitchen > Living room > Hallway to front door > Front garden > outside garder (win).
+**Style**: Crowded. 
+**Make interesting**: Physics object placement, Shortcuts. 
+**Planned route**: Start upstairs, run through the bedroom > hallway > Stairs > Kitchen > Living room > Hallway to front door > Front garden > outside garder (win). 
 **Shortcuts**: 
 - bedroom to stairs (corner skip) by jumping through a hole.
 - Stair to living room by jumping through vent.
 
-**Vacuum on shortcuts**: If a player takes a shortcut, speed up.
+**Vacuum on shortcuts**: If a player takes a shortcut, speed up or teleport.
 
 **Level design lookout**: Make doors glow, obstruct shortcuts but make them visible by giving them a certain style of placement (must seem a bit off, like skewed). Check colour of objects, make similar use objects have a defined colour so that the player sees that a physics object is a physics object faster.
 
