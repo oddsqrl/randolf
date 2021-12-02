@@ -12,7 +12,7 @@
 
 You play from a dogs point of view. A roomba takes over an old style vacuum cleaner and begins chasing you. There is only one way out of the building to safety and there are various hurdles in the way.
 
-You die on collision with the vacuum cleaner, got a limited amount of boost which slowly regenerates after not using it. Got a few physics objects you can push through for shortcuts but it's not necessary.
+You die on collision with the vacuum cleaner, got a limited amount of boost which slowly regenerates after not using it. Got a few physics objects you can push through for shortcuts but it's not necessary to do so.
 
 The story is that you and your family moved into a new house, with a haunted roomba that has taken control of a vacuum cleaner. You are not brave, you are just scared and bail out. But it seems to be following you?
 <br>
@@ -29,8 +29,9 @@ The story is that you and your family moved into a new house, with a haunted roo
 **Revenue-model**: Free, Donations.  
 **Advertising**: None, face-to-face.  
 
-**Conflict**: Getting stuck on map, nearing vacuum cleaner, finding the right path.
-**Outcomes**: Survival basis.
+**Conflict**: Getting stuck on map, nearing vacuum cleaner, finding the right path.  
+**Outcomes**: Survival basis.  
+**Interaction**: Players can interact with physics objects and gates (such as doors and fence gates)
 
 <h4 style="color: rgb(132, 168, 192);">Formal Elements</h4>
 

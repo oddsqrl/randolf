@@ -15,6 +15,7 @@ This includes:
 This doesn't include:  
 - Professional grade art.
 - Professional grade sound design.  
+- Professional visual effects.  
 
 Needed for this project:
 - One Developer with interest in Art, Sound design, Music. Animation is a plus but these could be done in engine.
@@ -22,6 +23,7 @@ Needed for this project:
 - A fitting IDE (integrated development environment) for coding purposes. Likely Jetbrains [Rider](https://www.jetbrains.com/rider/) or [Visual Studio Code](https://visualstudio.microsoft.com/).
 - A PC capable of making a game build.
 - Free range for experimentation with level design, features and pacing.  
+- Possible personal sound recording requires a decent microphone and software like [Audacity](https://www.audacityteam.org/)
 <br>  
 
 <h4 style="color: rgb(132, 168, 192);">MoSCoW</h4>  
@@ -70,13 +72,25 @@ Only certain items that need be will have physics applied to them, this includes
 - ProBuilder
 <br>
 
-<h4 style="color: rgb(132, 168, 192);">System requirements</h4>
+<h4 style="color: rgb(132, 168, 192);">System requirements</h4>  
 
-- 1920 x 1080 screen (1080p)  
-- Decent CPU and GPU  
-- 256GB storage (dev), 10GB (Player)  
-<br>
+Developer:
+- Monitor Minimal 1920 x 1080 screen (1080p) and 60FPS
+- Very good CPU and GPU 
+- 128GB storage HDD       
+- 16GB ram
+- keyboard + mouse and Controller (both for dev)
+- Headset + Speakers
+- Windows 10
 
+Player
+- Dual Core CPU
+- Recent GPU
+- 4GB storage (Player)  
+- 4-8GB ram
+- keyboard + mouse or Controller
+- Windows 10
+<br>  
 
 ## Code-Structure
 **AIMovement : MonoBehaviour**:  
