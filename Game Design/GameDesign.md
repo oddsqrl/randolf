@@ -8,7 +8,6 @@
 7. [Game flow](#game-flowchart)
 8. [Code Structure](#Code-Structure)
 <br>
----
 
 ## general
 <h4 style="color: rgb(190, 190, 190);">Concept</h4>
@@ -19,7 +18,6 @@ You die on collision with the vacuum cleaner, got a limited amount of boost whic
 
 The story is that the roomba is killing you... that's it. Story writing :cool
 <br>
----
 
 ## Indepth-Information
 **Platform**: PC (Windows 10). Other platforms might get ports.
@@ -90,7 +88,6 @@ Unity (C#).
 installation on the PC.
 <br>
 
----
 
 ## MDA:
 **Aesthetics:**
@@ -110,7 +107,6 @@ Discovery: Learn how and what to use in situations, Discover the arena and racet
 - Boosting.
 - Physics objects.
 <br> 
----
 
 ## Style
 ### Moodboard:
@@ -119,7 +115,6 @@ Discovery: Learn how and what to use in situations, Discover the arena and racet
 ### Colour palette:
 ![Colours](./Assets/ColourVacuumPalette.png)
 <br>
----
 
 ## MoSCoW:
 **Must**:
@@ -140,7 +135,6 @@ Discovery: Learn how and what to use in situations, Discover the arena and racet
 **Won't**: 
 - Multiplayer.
 <br>
----
 
 ## User-interface
 Menu's:
@@ -175,7 +169,6 @@ The small circle in the center fills with the amount of completion.
 When done loading the level it slides open again and enables the character movement.
 ![Loading](./Assets/loading-scene.png)
 <br>
----
 
 ## Game-flowchart:
 If there is a split and one of the arrows is grey:
@@ -188,7 +181,6 @@ On opening the game:
 On level load:
 ![Game loop](./Assets/gameloop.png)
 <br>
----
 
 ## Code-Structure
 Using Unity C# and fitting libraries (for UI, Input System, etc).
