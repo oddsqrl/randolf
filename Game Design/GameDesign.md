@@ -6,8 +6,9 @@
 5. [Must, Should, Could and Won't haves](#MoSCoW)
 6. [User interface](#User-interface)
 7. [Game flow](#game-flowchart)
+8. [Code Structure](#Code-Structure)
 <br>
-
+---
 
 ## general
 <h4 style="color: rgb(190, 190, 190);">Concept</h4>
@@ -17,24 +18,44 @@ You play from a dogs point of view. A roomba takes over an old style vacuum clea
 You die on collision with the vacuum cleaner, got a limited amount of boost which slowly regenerates after not using it. Got a few physics objects you can push through for shortcuts but it's not necessary.
 
 The story is that the roomba is killing you... that's it. Story writing :cool
-Target demographic: 13+, Is paced for fun and hectic chaos. 
+<br>
+---
 
 ## Indepth-Information
+**Platform**: PC (Windows 10). Other platforms might get ports.
+**Target demographic/audience**: 13+, Is paced for fun and hectic chaos. 
 **Players**: Singeplayer.
 **Objective**: Get out of the level and into the next level.
 **Rewards**: Level completion.
 
-**Revenue-model**: Free, Donations
-**Advertising**: None, face-to-face
+**Revenue-model**: Free, Donations.
+**Advertising**: None, face-to-face.
 
 **Conflict**: Getting stuck on map, nearing vacuum cleaner, finding the right path.
 **Outcomes**: Survival basis.
+<h4 style="color: rgb(190, 190, 190);">Scope</h4>
+
+This includes:
+- An Unity Engine based game.
+- Some low poly art.
+- Prototype music.
+
+This doesn't include:
+- Professional grade art.
+- Professional grade sound design.
+
+Needed for this project:
+- One Developer with interest in Art, Sound design, Music.
+- A PC capable of running [Unity](https://unity.com), [Blender](https://blender.org/) and a wanted DAW (Likely [FL Studio](https://image-line.com) or [Ableton](https://ableton.com) as they are the market standerd).
+- A fitting IDE (integrated development environment) for coding purposes. Likely Jetbrains [Rider](https://www.jetbrains.com/rider/) or [Visual Studio Code](https://visualstudio.microsoft.com/).
+- A PC capable of making a game build.
+- Free range for experimentation with level design, features and pacing.
 <br>
 
 <h4 style="color: rgb(190, 190, 190);">Formal Elements</h4>
 
-**Narrative:** Play, Challenge
-**Players:** Single-player
+**Narrative:** Play, Challenge.
+**Players:** Single-player.
 **Player mode:** Casual, Race.  
 **Premises:** Story, Introduction, Logo, Launch page.  
 **Objectives:** Get out of the current room.
@@ -53,27 +74,29 @@ Target demographic: 13+, Is paced for fun and hectic chaos.
 
 <h4 style="color: rgb(190, 190, 190);">Rules</h4>
 
-- Can't go through map
-- Can push physics objects
-- Can jump onto platforms
-- Follow an unclear path with a few shortcuts
-- If you are touched by the vacuum cleaner you've lost
-- The vacuum follows the player
+- Can't go through map.
+- Can push physics objects.
+- Can jump onto platforms.
+- Follow an unclear path with a few shortcuts.
+- If you are touched by the vacuum cleaner you've lost.
+- The vacuum follows the player.
 <br>
 
 <h4 style="color: rgb(190, 190, 190);">Frameworks</h4>
-Unity (C#)
+Unity (C#).
 <br>
 
 <h4 style="color: rgb(190, 190, 190);">Requirements</h4>
-installation on the PC
+installation on the PC.
 <br>
+
+---
 
 ## MDA:
 **Aesthetics:**
-- Challenge
-- Submission  
-- Discovery
+- Challenge.
+- Submission .
+- Discovery.
 
 **Dynamics:**  
 Challenge: Against other players and working with what you get.  
@@ -82,11 +105,12 @@ Discovery: Learn how and what to use in situations, Discover the arena and racet
 
   
 **Mechanics:**
-- Movement
-- Speed of vacuum and dog
-- Boosting
-- Physics objects
+- Movement.
+- Speed of vacuum and dog.
+- Boosting.
+- Physics objects.
 <br> 
+---
 
 ## Style
 ### Moodboard:
@@ -95,35 +119,36 @@ Discovery: Learn how and what to use in situations, Discover the arena and racet
 ### Colour palette:
 ![Colours](./Assets/ColourVacuumPalette.png)
 <br>
+---
 
 ## MoSCoW:
 **Must**:
-- 1 level
-- Movement
-- Follow/Pathfinding AI (navmesh)
+- 1 level.
+- Movement.
+- Follow/Pathfinding AI (navmesh).
 
 **Should**:
-- Good art
-- Fitting music
+- Good art.
+- Fitting music.
 
 **Could**: 
-- Sneaking
-- Simple puzzles
-- Dialogue system
-- Shop/Cosmetics
+- Sneaking.
+- Simple puzzles.
+- Dialogue system.
+- Shop/Cosmetics.
 
 **Won't**: 
-- Multiplayer
+- Multiplayer.
 <br>
-
+---
 
 ## User-interface
 Menu's:
-- Dark blue: Button
-- Light blue: Slider
-- Black box: Control scheme Keyboard + Controller
-- Yellow box: Selectable level
-- Green box: Unselectable level
+- Dark blue: Button.
+- Light blue: Slider.
+- Black box: Control scheme Keyboard + Controller.
+- Yellow box: Selectable level.
+- Green box: Unselectable level.
 
 Start menu:
 ![Startmenu](./Assets/startmenu.png)
@@ -138,8 +163,8 @@ Level select (unused):
 <br>
 
 Ingame:
-- Blue bar: Amount of boost
-- White rectangle: Display distance to the vacuum cleaner
+- Blue bar: Amount of boost.
+- White rectangle: Display distance to the vacuum cleaner.
 
 ![Ingame](./Assets/ingame.png)
 <br>
@@ -150,6 +175,7 @@ The small circle in the center fills with the amount of completion.
 When done loading the level it slides open again and enables the character movement.
 ![Loading](./Assets/loading-scene.png)
 <br>
+---
 
 ## Game-flowchart:
 If there is a split and one of the arrows is grey:
@@ -161,3 +187,28 @@ On opening the game:
 
 On level load:
 ![Game loop](./Assets/gameloop.png)
+<br>
+---
+
+## Code-Structure
+Using Unity C# and fitting libraries (for UI, Input System, etc).
+Using Unity C# as it is a small, low poly game and since I have experience working with it.
+Not using Unity ECS as I don't need networking nor do I need the optimisations for this project.
+
+Physics handled by Unity RigidBody for simplicity purposes.
+
+**Unity packages**:
+Input System
+NavMesh
+Cinemachine
+TextMeshPro
+ProBuilder
+
+<h4 style="color: rgb(190, 190, 190);">Classes</h4>
+**AIMovement.cs**:
+Has the navmesh of the level on it.
+Has the dog (target) transform/location on it.
+Moves the AI accordingly by setting a point on the map closest to the target.
+
+**PlayerMovement.cs**:
+Handles the player movement.

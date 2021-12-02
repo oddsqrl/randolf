@@ -10,7 +10,7 @@
           "type": "markdown",
           "state": {
             "file": "GameDesign.md",
-            "mode": "source"
+            "mode": "preview"
           }
         }
       }
@@ -89,8 +89,8 @@
   "active": "5636742f5dfbb6ae",
   "lastOpenFiles": [
     "GameDesign.md",
-    "Game Design Document.md",
     "Technical Design.md",
+    "Game Design Document.md",
     "Indepth-Information.md",
     "Assets/gameloop.png",
     "Requirements BUAS and game idea.md",
