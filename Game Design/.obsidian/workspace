@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Functional Design.md",
+            "file": "GameDesign.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Functional Design.md",
+                "file": "GameDesign.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,7 +88,7 @@
   },
   "active": "5636742f5dfbb6ae",
   "lastOpenFiles": [
-    "Functional Design.md",
+    "GameDesign.md",
     "Game Design Document.md",
     "Technical Design.md",
     "Indepth-Information.md",
