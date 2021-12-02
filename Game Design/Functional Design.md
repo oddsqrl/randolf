@@ -5,8 +5,7 @@
 4. [Game Style](#Style)
 5. [Must, Should, Could and Won't haves](#MoSCoW)
 6. [User interface](#User-interface)
-7. [Game flow](#game-flowchart)
-8. [Code Structure](#Code-Structure)
+
 <br>
 
 ## general
@@ -16,7 +15,7 @@ You play from a dogs point of view. A roomba takes over an old style vacuum clea
 
 You die on collision with the vacuum cleaner, got a limited amount of boost which slowly regenerates after not using it. Got a few physics objects you can push through for shortcuts but it's not necessary.
 
-The story is that the roomba is killing you... that's it. Story writing :cool
+The story is that you and your family moved into a new house, with a haunted roomba that has taken control of a vacuum cleaner. You are not brave, you are just scared and bail out. But it seems to be following you?
 <br>
 
 ## Indepth-Information
@@ -181,6 +180,7 @@ Style: Upbeat, fast paced, Hyper.
 - Simple puzzles.
 - Dialogue system.
 - Shop/Cosmetics.
+- A video trailer + Social Media Presence
 
 **Won't**: 
 - Multiplayer.
@@ -232,25 +232,7 @@ On level load:
 ![Game loop](./Assets/gameloop.png)
 <br>
 
-## Code-Structure
-Using Unity C# and fitting libraries (for UI, Input System, etc).
-Using Unity C# as it is a small, low poly game and since I have experience working with it.
-Not using Unity ECS as I don't need networking nor do I need the optimisations for this project.
+Gameloop indepth:
+![Game loop indepth](./Assets/gameloopspecified.png)
+<br>
 
-Physics handled by Unity RigidBody for simplicity purposes.
-
-**Unity packages**:
-- Input System
-- NavMesh
-- Cinemachine
-- TextMeshPro
-- ProBuilder
-
-<h4 style="color: rgb(132, 168, 192);">Classes</h4>
-**AIMovement.cs**:
-Has the navmesh of the level on it.
-Has the dog (target) transform/location on it.
-Moves the AI accordingly by setting a point on the map closest to the target.
-
-**PlayerMovement.cs**:
-Handles the player movement.

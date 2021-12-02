@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "GameDesign.md",
+            "file": "Technical Design.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "GameDesign.md",
+                "file": "Technical Design.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,13 +88,15 @@
   },
   "active": "5636742f5dfbb6ae",
   "lastOpenFiles": [
-    "GameDesign.md",
     "Technical Design.md",
-    "Game Design Document.md",
-    "Indepth-Information.md",
-    "Assets/gameloop.png",
-    "Requirements BUAS and game idea.md",
-    "MP1.md",
-    "Debrief.md"
+    "Functional Design.md",
+    "Assets/bottom-level.png",
+    "Assets/ColourVacuumPalette.png",
+    "Assets/ingame.png",
+    "Assets/level-select.png",
+    "Assets/loading-scene.png",
+    "Assets/settings.png",
+    "Assets/startmenu.png",
+    "Assets/top-level.png"
   ]
 }
