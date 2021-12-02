@@ -2,8 +2,9 @@
 1. [scope](#scope)
 2. [Technical Details](#Technical-details)
 3. [Code Structure](#Code-Structure)
-4. [Optimisation](#Game-optimisation)
-5. [Game flow](#game-flowchart)
+4. [Assets](#Assets)
+5. [Optimisation](#Game-optimisation)
+6. [Game flow](#game-flowchart)
 <br>  
 
 ## Scope
@@ -118,6 +119,8 @@ Manages scene loading screen + switching.
 <h4 style="color: rgb(132, 168, 192);">General Architecture</h4>  
 <br>  
 <h4 style="color: rgb(132, 168, 192);">Models + Art</h4>  
+
+## Assets
 
 **UI ** 
 >Button
