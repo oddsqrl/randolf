@@ -1,5 +1,48 @@
-1. [Game flow](#game-flowchart)
-2. [Code Structure](#Code-Structure)
+# Chapters
+1. [scope](#scope)
+2. [Game flow](#game-flowchart)
+3. [Code Structure](#Code-Structure)
+<br>  
+
+## Scope
+This includes:  
+- An Unity Engine based game.
+- Some low poly art.
+- Prototype music.
+
+This doesn't include:  
+- Professional grade art.
+- Professional grade sound design.  
+
+Needed for this project:
+- One Developer with interest in Art, Sound design, Music. Animation is a plus but these could be done in engine.
+- A PC capable of running [Unity](https://unity.com), [Blender](https://blender.org/) and a wanted DAW (Likely [FL Studio](https://image-line.com) or [Ableton](https://ableton.com) as they are the market standerd).
+- A fitting IDE (integrated development environment) for coding purposes. Likely Jetbrains [Rider](https://www.jetbrains.com/rider/) or [Visual Studio Code](https://visualstudio.microsoft.com/).
+- A PC capable of making a game build.
+- Free range for experimentation with level design, features and pacing.  
+<br>  
+
+<h4 style="color: rgb(132, 168, 192);">MoSCoW</h4>  
+**Must**:
+- 1 level.
+- Movement.
+- Follow/Pathfinding AI (navmesh).
+
+**Should**:
+- Good art.
+- Fitting music.
+
+**Could**: 
+- Sneaking.
+- Simple puzzles.
+- Dialogue system.
+- Shop/Cosmetics.
+- A video trailer + Social Media Presence
+
+**Won't**: 
+- Multiplayer.
+<br>
+
 
 ## Code-Structure
 ### Target Platform
@@ -85,3 +128,20 @@ Manages scene loading screen + switching.
 > Boxes
 > Kitchen with sink
 > Vent/Hanging Lamp
+<br>  
+
+## Game-flowchart:
+If there is a split and one of the arrows is grey:
+The light gray arrow takes priority, the other arrow would be a could have, but is not a must have for the wanted experience.
+
+On opening the game:
+![Game open](./Assets/gamestart.png)
+<br>
+
+On level load:
+![Game loop](./Assets/gameloop.png)
+<br>
+
+Gameloop indepth:
+![Game loop indepth](./Assets/gameloopspecified.png)
+<br>  
