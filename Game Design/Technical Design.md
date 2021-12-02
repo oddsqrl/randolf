@@ -1,7 +1,9 @@
 # Chapters
 1. [scope](#scope)
-2. [Game flow](#game-flowchart)
+2. [Technical Details](#Technical-details)
 3. [Code Structure](#Code-Structure)
+4. [Optimisation](#Game-optimisation)
+5. [Game flow](#game-flowchart)
 <br>  
 
 ## Scope
@@ -43,8 +45,7 @@ Needed for this project:
 - Multiplayer.
 <br>
 
-
-## Code-Structure
+## Technical-details
 ### Target Platform
 **Launch platform**: Windows 10.  
 **Game engine**: Unity Engine. 
@@ -58,7 +59,8 @@ Needed for this project:
 - Using Unity C# as it is a small, low poly game and since I have experience working with it. Unity runs 3D and is good for a 
 - Not using Unity ECS as I don't need networking nor do I need the optimisations for this project.  
 
-Physics handled by Unity RigidBody for simplicity purposes.
+Physics handled by Unity RigidBody for simplicity purposes. It wouldn't fit the scope otherwise.  
+Only certain items that need be will have physics applied to them, this includes but is not limited to: The player, Blocking object.
 
 **Unity packages**:
 - Input System
@@ -75,8 +77,8 @@ Physics handled by Unity RigidBody for simplicity purposes.
 - 256GB storage (dev), 10GB (Player)  
 <br>
 
-<h4 style="color: rgb(132, 168, 192);">Classes + Methods</h4>  
 
+## Code-Structure
 **AIMovement : MonoBehaviour**:  
 Has the navmesh of the level on it.  
 Has the dog (target) transform/location on it.  
@@ -128,6 +130,26 @@ Manages scene loading screen + switching.
 > Boxes
 > Kitchen with sink
 > Vent/Hanging Lamp
+
+**Terrain**
+Inside:
+> Carpet texture
+
+Outside:
+> Grass texture
+> Grass
+> Bushes
+> Fences
+> Bumpy ground
+> Pathway
+> Fence gate
+<br>  
+
+## Game-optimisation
+If the game has trouble performing on the expected system requirements we must look at these things and possibly optimise them.  
+- **Culling and Occlusion** - Not loading objects outside of the camera view
+- **Level of Detail (LOD)**  - Changing models to lower quality the further away the player is.
+- **Clipping** - Cut parts of objects that are not in the FOV of the player
 <br>  
 
 ## Game-flowchart:
