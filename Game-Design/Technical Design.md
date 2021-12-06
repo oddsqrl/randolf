@@ -92,11 +92,6 @@ Calls SceneManager.
 
 **SceneManager : MonoBehaviour**:  
 Manages scene loading screen + switching.  
-<br>  
-<h4 style="color: rgb(132, 168, 192);">General Architecture</h4>  
-<br>  
-<h4 style="color: rgb(132, 168, 192);">Models + Art</h4>  
-<br>  
 
 ## Game-optimisation
 If the game has trouble performing on the expected system requirements we must look at these things and possibly optimise them.  
