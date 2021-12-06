@@ -19,3 +19,5 @@
 **Won't**: 
 - Multiplayer.
 <br>
+
+Check the planning out on [Trello](https://trello.com/b/jBZEWijx/randolf)

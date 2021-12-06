@@ -205,44 +205,43 @@ When done loading the level it slides open again and enables the character movem
 ## Assets
 
 **UI **  
->Button
->Font
->Slider
->Slider nob
-> Background
-> Loading screen slice left
-> Loading screen slice right
-> Loading screen symbol
+>Button  
+>Font  
+>Slider  
+>Slider nob  
+> Background  
+> Loading screen slice left  
+> Loading screen slice right  
+> Loading screen symbol  
 
 **Game General**  
-> Vacuum cleaner
-> Roomba
-> Dog
+> Vacuum cleaner  
+> Roomba  
+> Dog  
 
 **Game Level 1**  
-> Wall
-> Wall with hole
-> Wall with door frame
-> Door
-> Closet
-> Stairs
-> Boxes
-> Kitchen with sink
-> Vent/Hanging Lamp
+> Wall  
+> Wall with hole  
+> Wall with door frame  
+> Door  
+> Closet  
+> Stairs  
+> Boxes  
+> Kitchen with sink  
+> Vent/Hanging Lamp  
 
 **Terrain**  
 Inside:  
-> Carpet texture
+> Carpet texture  
 
 Outside:  
-> Grass texture
-> Grass
-> Bushes
-> Fences
-> Bumpy ground
-> Pathway
-> Fence gate
-<br>  
+> Grass texture  
+> Grass  
+> Bushes  
+> Fences  
+> Bumpy ground  
+> Pathway  
+> Fence gate  
 
 
 
