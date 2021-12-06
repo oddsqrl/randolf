@@ -94,9 +94,10 @@ This doesn't include:
 - Discovery.
 
 **Dynamics:**  
-Challenge: Against other players and working with what you get.  
-Submission: It is a game for hectic chaos which is meant to be fun. It’s mainly here pastime.
-Discovery: Learn how and what to use in situations, Discover the arena and racetracks and shortcuts.  
+Saving boost for moments you need it.  
+Boosting while jumping to jump further.  
+Pushing things in the way of the vacuum to make it find a new path.  
+Taking shortcuts to gain an advantage.  
 
   
 **Mechanics:**
