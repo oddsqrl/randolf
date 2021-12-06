@@ -1,22 +1,12 @@
 # Chapters
 1. [scope](#scope)
 2. [Technical Details](#Technical-details)
-3. [Code Structure](#Code-Structure)
+3. [General Structure](#Code-Structure)
 4. [Assets](#Assets)
 5. [Optimisation](#Game-optimisation)
 6. [Game flow](#game-flowchart)
 <br>  
 
-## Scope
-This includes:  
-- An Unity Engine based game.
-- Some low poly art.
-- Prototype music.
-
-This doesn't include:  
-- Professional grade art.
-- Professional grade sound design.  
-- Professional visual effects.  
 
 Needed for this project:
 - One Developer with interest in Art, Sound design, Music. Animation is a plus but these could be done in engine.
@@ -27,27 +17,6 @@ Needed for this project:
 - Possible personal sound recording requires a decent microphone and software like [Audacity](https://www.audacityteam.org/)
 <br>  
 
-<h4 style="color: rgb(132, 168, 192);">MoSCoW</h4>  
-**Must**:
-- 1 level.
-- Movement.
-- Follow/Pathfinding AI (navmesh).
-
-**Should**:
-- Good art.
-- Fitting music.
-
-**Could**: 
-- Sneaking.
-- Simple puzzles.
-- Dialogue system.
-- Shop/Cosmetics.
-- A video trailer + Social Media Presence
-
-**Won't**: 
-- Multiplayer.
-<br>
-
 ## Technical-details
 ### Target Platform
 **Launch platform**: Windows 10.  
@@ -57,9 +26,17 @@ Needed for this project:
 - Blender: 2.93 LTS
   <br>
   
+<h4 style="color: rgb(132, 168, 192);">Frameworks</h4>
+Unity (C#).
+<br>
+
+<h4 style="color: rgb(132, 168, 192);">Requirements</h4>
+installation on the PC.
+<br>
+  
 **Why Unity**:
 - Using Unity C# and fitting libraries (for UI, Input System, etc).  
-- Using Unity C# as it is a small, low poly game and since I have experience working with it. Unity runs 3D and is good for a 
+- Using Unity C# as it is a small, low poly game and since I have experience working with it. Unity runs 3D and is good for an indie game.
 - Not using Unity ECS as I don't need networking nor do I need the optimisations for this project.  
 
 Physics handled by Unity RigidBody for simplicity purposes. It wouldn't fit the scope otherwise.  
@@ -119,47 +96,6 @@ Manages scene loading screen + switching.
 <h4 style="color: rgb(132, 168, 192);">General Architecture</h4>  
 <br>  
 <h4 style="color: rgb(132, 168, 192);">Models + Art</h4>  
-
-## Assets
-
-**UI ** 
->Button
->Font
->Slider
->Slider nob
-> Background
-> Loading screen slice left
-> Loading screen slice right
-> Loading screen symbol
-
-**Game General**
-> Vacuum cleaner
-> Roomba
-> Dog
-
-**Game Level 1**
-> Wall
-> Wall with hole
-> Wall with door frame
-> Door
-> Closet
-> Stairs
-> Boxes
-> Kitchen with sink
-> Vent/Hanging Lamp
-
-**Terrain**
-Inside:
-> Carpet texture
-
-Outside:
-> Grass texture
-> Grass
-> Bushes
-> Fences
-> Bumpy ground
-> Pathway
-> Fence gate
 <br>  
 
 ## Game-optimisation
@@ -172,10 +108,6 @@ If the game has trouble performing on the expected system requirements we must l
 ## Game-flowchart:
 If there is a split and one of the arrows is grey:
 The light gray arrow takes priority, the other arrow would be a could have, but is not a must have for the wanted experience.
-
-On opening the game:
-![Game open](./Assets/gamestart.png)
-<br>
 
 On level load:
 ![Game loop](./Assets/gameloop.png)

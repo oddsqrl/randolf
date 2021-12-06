@@ -1,9 +1,11 @@
 # Chapters
 1. [General Information](#general)
 2. [Indepth Information](#Indepth-Information)
-3. [Mechanics, Dynamics and Aesthetics](#MDA)
-4. [Game Style](#Style)
-5. [User interface](#User-interface)
+3. [Scope](#Scope)
+4. [Mechanics, Dynamics and Aesthetics](#MDA)
+5. [Game Style](#Style)
+6. [User interface](#User-interface)
+7. [Assets](#Assets)
 
 <br>
 
@@ -18,7 +20,7 @@ The story is that you and your family moved into a new house, with a haunted roo
 <br>
 
 ## Indepth-Information
-**Platform**: PC (Windows 10). Other platforms might get ports. 
+**Platform**: PC (Windows 10). Other platforms might get ports.  
 **Target demographic/audience**: 13+, Is paced for fun and hectic chaos.  
 **Players**: Singeplayer, First person.  
 **Objective**: Get out of the level and into the next level.  
@@ -31,15 +33,25 @@ The story is that you and your family moved into a new house, with a haunted roo
 
 **Conflict**: Getting stuck on map, nearing vacuum cleaner, finding the right path.  
 **Outcomes**: Survival basis.  
-**Interaction**: Players can interact with physics objects and gates (such as doors and fence gates)
+<h4 style="color: rgb(132, 168, 192);">Interaction</h4>  
+
+You start as a dog in a level. The goal is to escape.  
+You can **move** and **jump** to advance the level.  
+**Boosting** allows for speeding up the speed of your movement.  
+Colliding with **physics object** will move them out of your way.  
+Colliding with **doors** will open them according to their hinge.
+To make moving in a level more convenient, you can **look around** with the ingame first person camera.
 
 <h4 style="color: rgb(132, 168, 192);">Formal Elements</h4>
 
-**Narrative:** Play, Challenge. 
-**Players:** Single-player. 
+**Narrative:** Play, Challenge.  
+**Players:** Single-player.  
 **Player mode:** Casual, Race.  
-**Premises:** Story, Introduction, Logo, Launch page.  
-**Objectives:** Get out of the current room. 
+**Premises:** Introduction, Logo, Launch page.  
+- **Introduction**, A small piece of text/voice bit on start of the game.
+- **Logo**, what you see on the main menu. Shows the style of the game and colour palette in it.
+- **Launch page**, the page on itch.io, contains a description of the game and gameplay.
+**Objectives:** Get out of the current room.  
 
 **Resources:** Physics objects (push out of the way).
 <br>
@@ -63,13 +75,16 @@ The story is that you and your family moved into a new house, with a haunted roo
 - The vacuum follows the player.
 <br>
 
-<h4 style="color: rgb(132, 168, 192);">Frameworks</h4>
-Unity (C#).
-<br>
+## Scope
+This includes:  
+- An Unity Engine based game.
+- Some low poly art.
+- Prototype music.
 
-<h4 style="color: rgb(132, 168, 192);">Requirements</h4>
-installation on the PC.
-<br>
+This doesn't include:  
+- Professional grade art.
+- Professional grade sound design.  
+- Professional visual effects.  
 
 
 ## MDA:
@@ -95,12 +110,6 @@ Discovery: Learn how and what to use in situations, Discover the arena and racet
 ## Style
 Art: Lowpoly, brightly coloured, simplistic.
 
-### Moodboard:
-![Moodboard](./Assets/moodboard.png)
-
-### Colour palette:
-![Colours](./Assets/ColourVacuumPalette.png)
-<br>
 
 ### Map design:
 **Style**: Crowded.  
@@ -114,6 +123,11 @@ Art: Lowpoly, brightly coloured, simplistic.
 
 **Level design lookout**: Make doors glow, obstruct shortcuts but make them visible by giving them a certain style of placement (must seem a bit off, like skewed). Check colour of objects, make similar use objects have a defined colour so that the player sees that a physics object is a physics object faster.  
 
+Top layout:
+![Moodboard](./Assets/top-level.png)
+Bottom layout:
+![Moodboard](./Assets/bottom-level.png)
+<br>
 
 Level:
 - White squares: rooms.
@@ -126,11 +140,7 @@ Level:
 - Black: House/Inside
 - Light blue: Fence (outside)
 
-Top layout:
-![Moodboard](./Assets/top-level.png)
-Bottom layout:
-![Moodboard](./Assets/bottom-level.png)
-<br>
+
 
 ### Audio and sound effects:
 <h4 style="color: rgb(132, 168, 192);">Sound effects</h4>
@@ -146,14 +156,7 @@ Style: Upbeat, fast paced, Hyper.
 - Menu background music.
 - Ingame soundtrack.
 
-## User-interface
-Menu's:
-- Dark blue: Button.
-- Light blue: Slider.
-- Black box: Control scheme Keyboard + Controller.
-- Yellow box: Selectable level.
-- Green box: Unselectable level.
-
+### User-interface
 Start menu:
 ![Startmenu](./Assets/startmenu.png)
 <br>
@@ -165,13 +168,24 @@ Setting menu:
 Level select (unused):
 ![Levelselect](./Assets/level-select.png)
 <br>
+  
+Menu's:
+- Dark blue: Button.
+- Light blue: Slider.
+- Black box: Control scheme Keyboard + Controller.
+- Yellow box: Selectable level.
+- Green box: Unselectable level.
+<br>  
 
-Ingame:
-- Blue bar: Amount of boost.
-- White rectangle: Display distance to the vacuum cleaner.
+Flowchart main menu:  
+![Game open](./Assets/gamestart.png)
+<br>  
 
+UI Ingame:  
 ![Ingame](./Assets/ingame.png)
-<br>
+<br>  
+- Blue bar: Amount of boost.  
+- White rectangle: Display distance to the vacuum cleaner.  
 
 Loading screen (unused):
 The half cut sides slide in from their respective side, goes into loading mode. 
@@ -179,5 +193,56 @@ The small circle in the center fills with the amount of completion.
 When done loading the level it slides open again and enables the character movement.
 ![Loading](./Assets/loading-scene.png)
 <br>
+
+### Moodboard:
+![Moodboard](./Assets/moodboard.png)
+
+### Colour palette:
+![Colours](./Assets/ColourVacuumPalette.png)
+<br>
+
+## Assets
+
+**UI **  
+>Button
+>Font
+>Slider
+>Slider nob
+> Background
+> Loading screen slice left
+> Loading screen slice right
+> Loading screen symbol
+
+**Game General**  
+> Vacuum cleaner
+> Roomba
+> Dog
+
+**Game Level 1**  
+> Wall
+> Wall with hole
+> Wall with door frame
+> Door
+> Closet
+> Stairs
+> Boxes
+> Kitchen with sink
+> Vent/Hanging Lamp
+
+**Terrain**  
+Inside:  
+> Carpet texture
+
+Outside:  
+> Grass texture
+> Grass
+> Bushes
+> Fences
+> Bumpy ground
+> Pathway
+> Fence gate
+<br>  
+
+
 
 
