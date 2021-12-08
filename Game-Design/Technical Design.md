@@ -10,7 +10,7 @@
 
 Needed for this project:
 - One Developer with interest in Art, Sound design, Music. Animation is a plus but these could be done in engine.
-- A PC capable of running [Unity](https://unity.com), [Blender](https://blender.org/) and a wanted DAW (Likely [FL Studio](https://image-line.com) or [Ableton](https://ableton.com) as they are the market standerd).
+- A PC capable of running [Unity](https://unity.com), [Blender](https://blender.org/) and a wanted DAW (Likely [FL Studio](https://image-line.com) or [Ableton](https://ableton.com) as they are the market standard).
 - A fitting IDE (integrated development environment) for coding purposes. Likely Jetbrains [Rider](https://www.jetbrains.com/rider/) or [Visual Studio Code](https://visualstudio.microsoft.com/).
 - A PC capable of making a game build.
 - Free range for experimentation with level design, features and pacing.  
@@ -44,10 +44,10 @@ Only certain items that need be will have physics applied to them, this includes
 
 **Unity packages**:
 - Input System
-- NavMesh
 - Cinemachine
 - TextMeshPro
 - ProBuilder
+- NavMesh
 <br>
 
 <h4 style="color: rgb(132, 168, 192);">System requirements</h4>  
