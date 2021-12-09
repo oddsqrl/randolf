@@ -20,18 +20,18 @@ Needed for this project:
 ## Technical-details
 ### Target Platform
 **Launch platform**: Windows 10.  
-**Game engine**: Unity Engine. 
-**Versions**:
+**Game engine**: Unity Engine.  
+**Versions**:  
 - Unity: 2020.3 LTS
 - Blender: 2.93 LTS
   <br>
   
 <h4 style="color: rgb(132, 168, 192);">Frameworks</h4>
-Unity (C#).
+Unity (C#).  
 <br>
 
 <h4 style="color: rgb(132, 168, 192);">Requirements</h4>
-installation on the PC.
+installation on the PC.  
 <br>
   
 **Why Unity**:
@@ -81,33 +81,33 @@ Handles the player movement.
 Handles the player physics.  
 
 **GameManager  : MonoBehaviour**:  
-Is an instance (can go between scenes)
+Is an instance (can go between scenes)  
 Keeps track of gamestate.  
 Has the play score.  
 Calls the scene switching and is a script between other scripts.  
 Runs the gameloop.  
 
 **UIScript : MonoBehaviour**:  
-Has UI functionalities, such as quit, setting values.
+Has UI functionalities, such as quit, setting values.  
 Calls SceneManager.  
 
 **SceneManager : MonoBehaviour**:  
 Manages scene loading screen + switching.  
 
 **GameData : ScriptableObject**:
-Contains the game settings
-Keeps track of the game time logic
+Contains the game settings.  
+Keeps track of the game time logic.  
 
 ## Game-optimisation
 If the game has trouble performing on the expected system requirements we must look at these things and possibly optimise them.  
-- **Culling and Occlusion** - Not loading objects outside of the camera view
+- **Culling and Occlusion** - Not loading objects outside of the camera view.
 - **Level of Detail (LOD)**  - Changing models to lower quality the further away the player is.
-- **Clipping** - Cut parts of objects that are not in the FOV of the player
+- **Clipping** - Cut parts of objects that are not in the FOV of the player.
 <br>  
 
 ## Game-flowchart:
-If there is a split and one of the arrows is grey:
-The light gray arrow takes priority, the other arrow would be a could have, but is not a must have for the wanted experience.
+If there is a split and one of the arrows is grey:  
+The light gray arrow takes priority, the other arrow would be a could have, but is not a must have for the wanted experience.  
 
 On level load:
 ![Game loop](./Assets/gameloop.png)

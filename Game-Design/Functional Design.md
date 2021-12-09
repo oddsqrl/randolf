@@ -12,11 +12,11 @@
 ## general
 <h4 style="color: rgb(132, 168, 192);">Concept</h4>
 
-You play from a dogs point of view. A roomba takes over an old style vacuum cleaner and begins chasing you. There is only one way out of the building to safety and there are various hurdles in the way.
+You play from a dogs point of view. A roomba takes over an old style vacuum cleaner and begins chasing you. There is only one way out of the building to safety and there are various hurdles in the way.  
 
-You die on collision with the vacuum cleaner, got a limited amount of boost which slowly regenerates after not using it. Got a few physics objects you can push through for shortcuts but it's not necessary to do so.
+You die on collision with the vacuum cleaner, got a limited amount of boost which slowly regenerates after not using it. Got a few physics objects you can push through for shortcuts but it's not necessary to do so.  
 
-The story is that you and your family moved into a new house, with a haunted roomba that has taken control of a vacuum cleaner. You are not brave, you are just scared and bail out. But it seems to be following you?
+The story is that you and your family moved into a new house, with a haunted roomba that has taken control of a vacuum cleaner. You are not brave, you are just scared and bail out. But it seems to be following you?  
 <br>
 
 ## Indepth-Information
@@ -39,8 +39,8 @@ You start as a dog in a level. The goal is to escape.
 You can **move** and **jump** to advance the level.  
 **Boosting** allows for speeding up the speed of your movement.  
 Colliding with **physics object** will move them out of your way.  
-Colliding with **doors** will open them according to their hinge.
-To make moving in a level more convenient, you can **look around** with the ingame first person camera.
+Colliding with **doors** will open them according to their hinge.  
+To make moving in a level more convenient, you can **look around** with the ingame first person camera.  
 
 <h4 style="color: rgb(132, 168, 192);">Formal Elements</h4>
 
@@ -53,7 +53,7 @@ To make moving in a level more convenient, you can **look around** with the inga
 - **Launch page**, the page on itch.io, contains a description of the game and gameplay.
 **Objectives:** Get out of the current room.  
 
-**Resources:** Physics objects (push out of the way).
+**Resources:** Physics objects (push out of the way).  
 <br>
 
 <h4 style="color: rgb(132, 168, 192);">Controls</h4>
@@ -76,12 +76,12 @@ To make moving in a level more convenient, you can **look around** with the inga
 <br>
 
 ## Scope
-This includes:  
+This includes:
 - An Unity Engine based game.
 - Some low poly art.
 - Prototype music.
 
-This doesn't include:  
+This doesn't include:
 - Professional grade art.
 - Professional grade sound design.  
 - Professional visual effects.  
@@ -93,7 +93,7 @@ This doesn't include:
 - Submission .
 - Discovery.
 
-**Dynamics:**  
+**Dynamics:**
 Saving boost for moments you need it.  
 Boosting while jumping to jump further.  
 Pushing things in the way of the vacuum to make it find a new path.  
@@ -116,7 +116,7 @@ Art: Lowpoly, brightly coloured, simplistic.
 **Style**: Crowded.  
 **Make interesting**: Physics object placement, Shortcuts.  
 **Planned route**: Start upstairs, run through the bedroom > hallway > Stairs > Kitchen > Living room > Hallway to front door > Front garden > outside garder (win).  
-**Shortcuts**: 
+**Shortcuts**:  
 - bedroom to stairs (corner skip) by jumping through a hole.
 - Stair to living room by jumping through vent.
 
@@ -188,10 +188,10 @@ UI Ingame:
 - Blue bar: Amount of boost.  
 - White rectangle: Display distance to the vacuum cleaner.  
 
-Loading screen (unused):
-The half cut sides slide in from their respective side, goes into loading mode. 
-The small circle in the center fills with the amount of completion. 
-When done loading the level it slides open again and enables the character movement.
+Loading screen (unused):  
+The half cut sides slide in from their respective side, goes into loading mode.   
+The small circle in the center fills with the amount of completion.   
+When done loading the level it slides open again and enables the character movement.  
 ![Loading](./Assets/loading-scene.png)
 <br>
 
