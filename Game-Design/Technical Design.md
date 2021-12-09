@@ -88,10 +88,15 @@ Calls the scene switching and is a script between other scripts.
 Runs the gameloop.  
 
 **UIScript : MonoBehaviour**:  
+Has UI functionalities, such as quit, setting values.
 Calls SceneManager.  
 
 **SceneManager : MonoBehaviour**:  
 Manages scene loading screen + switching.  
+
+**GameData : ScriptableObject**:
+Contains the game settings
+Keeps track of the game time logic
 
 ## Game-optimisation
 If the game has trouble performing on the expected system requirements we must look at these things and possibly optimise them.  
