@@ -46,7 +46,6 @@ Only certain items that need be will have physics applied to them, this includes
 - Input System
 - Cinemachine
 - TextMeshPro
-- ProBuilder
 - NavMesh
 <br>
 
