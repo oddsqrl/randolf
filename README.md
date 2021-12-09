@@ -1,4 +1,4 @@
 # randolf
 A small game made for my portfolio  
 
-Check out the Design documents [here](/Game-Design)
+Check out the [Functional Design document](/Game-Design/Functional Design.md), [Technical Design document](/Game-Design/Technical Design.md), or the [Planning](/Game-Design/planning.md) and [Kanban board](https://github.com/oddsqrl/randolf/projects/1)
