@@ -20,4 +20,4 @@
 - Multiplayer.
 <br>
 
-Check the planning out on [Trello](https://github.com/oddsqrl/randolf/projects/1)
+Check the planning out on [Github](https://github.com/oddsqrl/randolf/projects/1)
