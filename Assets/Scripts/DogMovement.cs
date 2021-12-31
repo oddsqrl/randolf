@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class DogMovement : MonoBehaviour
 {
     [Header("Movement settings")]
-    public float speed = 10f;
+    public float walkSpeed = 10f;
     public float runSpeed;
     //public float turnRadius;
     //public float turnSpeed;
@@ -21,15 +21,19 @@ public class DogMovement : MonoBehaviour
 
     [Header("Camera settings")]
     public Transform playerCam;
+    public Transform camPlace;
     public float sensitivity;
     public float maxY, maxX;
-    public float addedSensitivity;
+    public float turnSpeed = 100f;
 
     [Header("Movement data")]
+    public float curSpeed;
+    public bool Running;
     public Vector3 moveDebugVector;
 
     [Header("Camera data")]
-    public Vector3 camDebugVector;
+    Vector3 wantedRot = Vector3.zero;
+    public Vector2 camRotation;
 
     private Rigidbody rb;
     public Vector2 moveInputVec;
@@ -51,7 +55,7 @@ public class DogMovement : MonoBehaviour
         {
             // Calculate which direction and at what speed we'd like to move
             Vector3 targetVel = transform.TransformDirection(moveInputVec.x, 0, moveInputVec.y);
-            targetVel *= speed;
+            targetVel *= curSpeed;
 
             rb.AddForce(targetVel);
             rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxVelChange);
@@ -64,8 +68,24 @@ public class DogMovement : MonoBehaviour
         
         float mouseX = camInputVec.x * sensitivity * Time.deltaTime;
         float mouseY = camInputVec.y * sensitivity * Time.deltaTime;
-        camDebugVector += new Vector3(mouseX, -mouseY, 0);
-        playerCam.localRotation = Quaternion.Euler(camDebugVector.y, camDebugVector.x, 0);
+        camRotation += new Vector2(mouseX, -mouseY);
+        camRotation.y = Mathf.Clamp(camRotation.y, -maxY, maxY);
+        //camRotation.x = Mathf.Clamp(camRotation.x, transform.rotation.x - maxX, transform.rotation.x + maxX);
+        playerCam.rotation = Quaternion.Euler(camRotation.y, camRotation.x, 0);
+
+
+        //Turn character with turnspeed value
+        //wantedRot = Vector3.Lerp(transform.rotation.eulerAngles, playerCam.rotation.eulerAngles, turnSpeed);
+        //transform.rotation = Quaternion.RotateTowards(playerCam.rotation, transform.rotation, Time.deltaTime * turnSpeed);
+        transform.eulerAngles = new Vector3(0, playerCam.eulerAngles.y, 0);
+        playerCam.position = camPlace.position;
+    }
+
+    public void RunInputDetection(InputAction.CallbackContext value)
+    {
+        Running = value.ReadValue<float>() > 0 ? true : false;
+        if (Running) { curSpeed = runSpeed; }
+        else curSpeed = walkSpeed;
     }
 
     public void MoveInputDetection(InputAction.CallbackContext value)
