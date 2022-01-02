@@ -1,5 +1,5 @@
 # randolf
-## A journey behond
+***A journey behond***
 
 A small game made for my portfolio  
 
