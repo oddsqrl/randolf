@@ -24,17 +24,15 @@ public class DogMovement : MonoBehaviour
     public Transform camPlace;
     public float sensitivity;
     public float maxY, maxX;
-    public float turnSpeed = 100f;
 
     [Header("Movement data")]
     public float curSpeed;
     public bool Running;
     public Vector3 moveDebugVector;
+    public float useVelChange;
 
     [Header("Camera data")]
-    Vector3 wantedRot = Vector3.zero;
     public Vector2 camRotation;
-
     private Rigidbody rb;
     public Vector2 moveInputVec;
     public Vector2 camInputVec;
@@ -51,21 +49,24 @@ public class DogMovement : MonoBehaviour
 
     void Update()
     {
-        if (canJump)
-        {
-            // Calculate which direction and at what speed we'd like to move
-            Vector3 targetVel = transform.TransformDirection(moveInputVec.x, 0, moveInputVec.y);
-            targetVel *= curSpeed;
+        // Calculate which direction and at what speed we'd like to move
+        Vector3 targetVel = transform.TransformDirection(moveInputVec.x, 0, moveInputVec.y);
+        targetVel *= curSpeed;
+        rb.AddForce(targetVel);
+        float gravityBeforeClamp = rb.velocity.y;
 
-            rb.AddForce(targetVel);
-            rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxVelChange);
-        }
-        
+        // Clamp the speed
+        Vector3 vel = rb.velocity;
+        Vector3 clampedMovement = new Vector3(vel.x, 0, vel.z);
+        clampedMovement = Vector3.ClampMagnitude(clampedMovement, useVelChange);
+        //rb.velocity = Vector3.ClampMagnitude(rb.velocity, useVelChange);
+        rb.velocity = new Vector3(clampedMovement.x, vel.y, clampedMovement.x);
+
+
         // Add gravity onto rb
         rb.AddForce(new Vector3(0, -gravity * rb.mass, 0));
 
-
-        
+        // Handle camera control
         float mouseX = camInputVec.x * sensitivity * Time.deltaTime;
         float mouseY = camInputVec.y * sensitivity * Time.deltaTime;
         camRotation += new Vector2(mouseX, -mouseY);
@@ -73,10 +74,7 @@ public class DogMovement : MonoBehaviour
         //camRotation.x = Mathf.Clamp(camRotation.x, transform.rotation.x - maxX, transform.rotation.x + maxX);
         playerCam.rotation = Quaternion.Euler(camRotation.y, camRotation.x, 0);
 
-
-        //Turn character with turnspeed value
-        //wantedRot = Vector3.Lerp(transform.rotation.eulerAngles, playerCam.rotation.eulerAngles, turnSpeed);
-        //transform.rotation = Quaternion.RotateTowards(playerCam.rotation, transform.rotation, Time.deltaTime * turnSpeed);
+        // Rotate playerbod and set cam position
         transform.eulerAngles = new Vector3(0, playerCam.eulerAngles.y, 0);
         playerCam.position = camPlace.position;
     }
@@ -84,8 +82,8 @@ public class DogMovement : MonoBehaviour
     public void RunInputDetection(InputAction.CallbackContext value)
     {
         Running = value.ReadValue<float>() > 0 ? true : false;
-        if (Running) { curSpeed = runSpeed; }
-        else curSpeed = walkSpeed;
+        if (Running) { curSpeed = runSpeed; useVelChange = maxVelChange * runSpeed / walkSpeed; }
+        else { curSpeed = walkSpeed; useVelChange = maxVelChange; }
     }
 
     public void MoveInputDetection(InputAction.CallbackContext value)
