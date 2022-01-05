@@ -45,33 +45,30 @@ public class DogMovement : MonoBehaviour
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+
+        curSpeed = walkSpeed;
+        useVelChange = maxVelChange;
+    }
+
+    private void FixedUpdate()
+    {
+        // Set direction and correct speed towards that direction
+        Vector3 targetVel = transform.TransformDirection(moveInputVec.x, 0, moveInputVec.y) * curSpeed;
+        rb.AddForce(targetVel);
+        //rb.velocity *= 0.99f;
+
+        // Add gravity onto rb
+        rb.AddForce(-transform.up * gravity);
+
     }
 
     void Update()
     {
-        // Calculate which direction and at what speed we'd like to move
-        Vector3 targetVel = transform.TransformDirection(moveInputVec.x, 0, moveInputVec.y);
-        targetVel *= curSpeed;
-        rb.AddForce(targetVel);
-        float gravityBeforeClamp = rb.velocity.y;
-
-        // Clamp the speed
-        Vector3 vel = rb.velocity;
-        Vector3 clampedMovement = new Vector3(vel.x, 0, vel.z);
-        clampedMovement = Vector3.ClampMagnitude(clampedMovement, useVelChange);
-        //rb.velocity = Vector3.ClampMagnitude(rb.velocity, useVelChange);
-        rb.velocity = new Vector3(clampedMovement.x, vel.y, clampedMovement.x);
-
-
-        // Add gravity onto rb
-        rb.AddForce(new Vector3(0, -gravity * rb.mass, 0));
-
         // Handle camera control
         float mouseX = camInputVec.x * sensitivity * Time.deltaTime;
         float mouseY = camInputVec.y * sensitivity * Time.deltaTime;
         camRotation += new Vector2(mouseX, -mouseY);
         camRotation.y = Mathf.Clamp(camRotation.y, -maxY, maxY);
-        //camRotation.x = Mathf.Clamp(camRotation.x, transform.rotation.x - maxX, transform.rotation.x + maxX);
         playerCam.rotation = Quaternion.Euler(camRotation.y, camRotation.x, 0);
 
         // Rotate playerbod and set cam position
@@ -82,8 +79,14 @@ public class DogMovement : MonoBehaviour
     public void RunInputDetection(InputAction.CallbackContext value)
     {
         Running = value.ReadValue<float>() > 0 ? true : false;
-        if (Running) { curSpeed = runSpeed; useVelChange = maxVelChange * runSpeed / walkSpeed; }
-        else { curSpeed = walkSpeed; useVelChange = maxVelChange; }
+        if (Running) 
+        { 
+            curSpeed = runSpeed; useVelChange = maxVelChange * runSpeed / walkSpeed; 
+        }
+        else 
+        { 
+            curSpeed = walkSpeed; useVelChange = maxVelChange; 
+        }
     }
 
     public void MoveInputDetection(InputAction.CallbackContext value)
