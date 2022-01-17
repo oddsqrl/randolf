@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 public class MainMenu : MonoBehaviour
 {
@@ -27,7 +28,7 @@ public class MainMenu : MonoBehaviour
         
         string temp = slide.name.Substring(0, slide.name.Length - 6);
         Debug.Log(temp + "   " + slide.value);
-
+        slide.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = slide.value.ToString();
         gameData.SettingsChange(temp, slide.value);
     }
 

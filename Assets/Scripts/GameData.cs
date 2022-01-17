@@ -10,8 +10,7 @@ public class GameData : ScriptableObject
     public enum GameState
     {
         paused,
-        playing,
-        menu
+        playing
     }
 
     // Setting values
@@ -28,6 +27,14 @@ public class GameData : ScriptableObject
     public float bestTime;
     public float endTime;
     public GameState curGameState;
+
+    public void ResetValues()
+    {
+        FOV = 60;
+        sensitivity = 6;
+        musicVol = 0;
+        soundVol = 0;
+    }
 
     public void SettingsChange(string toChange, float value)
     {
