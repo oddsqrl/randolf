@@ -102,6 +102,8 @@ public class DogMovement : MonoBehaviour
         }
 
         // Handle camera control
+        sensitivity = gameData.sensitivity;
+        playerCam.GetComponent<Camera>().fieldOfView = gameData.FOV;
         float mouseX = camInputVec.x * sensitivity * Time.deltaTime;
         float mouseY = camInputVec.y * sensitivity * Time.deltaTime;
         camRotation += new Vector2(mouseX, -mouseY);

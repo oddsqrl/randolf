@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
+    public GameData gameData;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +27,8 @@ public class MainMenu : MonoBehaviour
         
         string temp = slide.name.Substring(0, slide.name.Length - 6);
         Debug.Log(temp + "   " + slide.value);
+
+        gameData.SettingsChange(temp, slide.value);
     }
 
     public void StartGame()

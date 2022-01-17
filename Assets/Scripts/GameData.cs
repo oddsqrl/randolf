@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 
 [CreateAssetMenu(fileName = "Data", menuName = "ScriptableObjects/GameData", order = 1)]
@@ -14,6 +15,8 @@ public class GameData : ScriptableObject
     }
 
     // Setting values
+    public AudioMixer mixer;
+
     public float FOV;
     public float sensitivity;
     public float musicVol;
@@ -38,9 +41,11 @@ public class GameData : ScriptableObject
                 break;
             case "music":
                 musicVol = value;
+                mixer.SetFloat("music", value);
                 break;
             case "sound":
                 soundVol = value;
+                mixer.SetFloat("sound", value);
                 break;
         }
     }
