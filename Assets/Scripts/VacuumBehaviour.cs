@@ -52,7 +52,7 @@ public class VacuumBehaviour : MonoBehaviour
     // https://stackoverflow.com/questions/61421172/why-does-navmeshagent-remainingdistance-return-values-of-infinity-and-then-a-flo
     public float GetPathRemainingDistance(NavMeshAgent navMeshAgent)
     {
-        // Returns if the path is not there, path is invalid or the endpoint has been reached.
+        // Returns if the path is not there or path is invalid.
         if (navMeshAgent.pathPending ||
             navMeshAgent.pathStatus == NavMeshPathStatus.PathInvalid ||
             navMeshAgent.path.corners.Length == 0)
