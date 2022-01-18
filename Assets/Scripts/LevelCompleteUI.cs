@@ -11,7 +11,7 @@ public class LevelCompleteUI : MonoBehaviour
 
     void Start()
     {
-        cur.text = "Time: " + gameData.TimeFormat(gameData.curTime);
-        best.text = "Best: " + gameData.TimeFormat(gameData.bestTime);
+        cur.text = "" + gameData.TimeFormat(gameData.curTime);
+        best.text = "Best " + gameData.TimeFormat(gameData.bestTime);
     }
 }
