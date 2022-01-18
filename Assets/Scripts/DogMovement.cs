@@ -174,8 +174,7 @@ public class DogMovement : MonoBehaviour
 
     public void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("Collision");
-        if (collision.gameObject.name == "vacuum")
+        if (collision.gameObject.name.ToLower() == "vacuum")
         {
             Debug.Log("Collided");
             gameData.EndTimer();
@@ -185,7 +184,6 @@ public class DogMovement : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Trigger");
         if (other.gameObject.name.ToLower() == "finish")
         {
             Debug.Log("Triggered");
