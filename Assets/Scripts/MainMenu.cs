@@ -34,7 +34,12 @@ public class MainMenu : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(gameData.curWantedLevel);
+    }
+
+    public void BackToMain()
+    {
+        gameData.SSMainMenu();
     }
 
     public void QuitGame()

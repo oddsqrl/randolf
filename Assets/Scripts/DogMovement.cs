@@ -143,7 +143,6 @@ public class DogMovement : MonoBehaviour
     {
         bool jump = value.ReadValue<float>() > 0 ? true : false;
         if(jump && canJump) jumping = true;
-        Debug.Log(jumping);
     }
 
     public void RunInputDetection(InputAction.CallbackContext value)
@@ -175,8 +174,10 @@ public class DogMovement : MonoBehaviour
 
     public void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.name == "vacuum")
+        Debug.Log("Collision");
+        if (collision.gameObject.name == "vacuum")
         {
+            Debug.Log("Collided");
             gameData.EndTimer();
             gameData.SSGameOver();
         }
@@ -184,8 +185,10 @@ public class DogMovement : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
+        Debug.Log("Trigger");
         if (other.gameObject.name.ToLower() == "finish")
         {
+            Debug.Log("Triggered");
             gameData.EndTimer(true);
             gameData.SSLevelComplete();
         }

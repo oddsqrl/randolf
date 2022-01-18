@@ -16,11 +16,12 @@ public class GameData : ScriptableObject
 
     // Setting values
     public AudioMixer mixer;
+    public int curWantedLevel = 1;
 
-    public float FOV;
-    public float sensitivity;
-    public float musicVol;
-    public float soundVol;
+    public float FOV = 60;
+    public float sensitivity = 6;
+    public float musicVol = 0;
+    public float soundVol = 0;
 
     // Timer values ingame
     public float curTime;
@@ -79,7 +80,7 @@ public class GameData : ScriptableObject
     public void EndTimer(bool lvlComp = false)
     {
         endTime = curTime;
-        if (lvlComp && bestTime < endTime) { bestTime = endTime; }
+        if (lvlComp && bestTime > endTime) { bestTime = endTime; }
     }
 
     public string TimeFormat(float time)
@@ -93,17 +94,20 @@ public class GameData : ScriptableObject
 
     public void SSMainMenu()
     {
+        Cursor.lockState = CursorLockMode.None;
         SceneManager.LoadScene(0);
     }
 
 
     public void SSLevelComplete()
     {
-        SceneManager.LoadScene(SceneManager.sceneCount - 2);
+        Cursor.lockState = CursorLockMode.None;
+        SceneManager.LoadScene(SceneManager.sceneCountInBuildSettings - 2);
     }
 
     public void SSGameOver()
     {
-        SceneManager.LoadScene(SceneManager.sceneCount - 1);
+        Cursor.lockState = CursorLockMode.None;
+        SceneManager.LoadScene(SceneManager.sceneCountInBuildSettings - 1);
     }
 }
