@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.SceneManagement;
 
 
 [CreateAssetMenu(fileName = "Data", menuName = "ScriptableObjects/GameData", order = 1)]
@@ -75,9 +76,34 @@ public class GameData : ScriptableObject
         curTime = passTime - startTime;
     }
 
-    public void endTimer()
+    public void EndTimer(bool lvlComp = false)
     {
         endTime = curTime;
-        if(bestTime < endTime) { bestTime = endTime; }
+        if (lvlComp && bestTime < endTime) { bestTime = endTime; }
+    }
+
+    public string TimeFormat(float time)
+    {
+        string formatted;
+        int seconds = Mathf.FloorToInt(time);
+        int komma = (Mathf.RoundToInt(time * 100) - seconds * 100);
+        formatted = "Time: " + seconds + "." + komma.ToString("D2");
+        return formatted;
+    }
+
+    public void SSMainMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+
+    public void SSLevelComplete()
+    {
+        SceneManager.LoadScene(SceneManager.sceneCount - 2);
+    }
+
+    public void SSGameOver()
+    {
+        SceneManager.LoadScene(SceneManager.sceneCount - 1);
     }
 }

@@ -95,10 +95,7 @@ public class DogMovement : MonoBehaviour
         {
             gameData.StartTimer(Time.time);
             gameData.Timer(Time.time);
-            int seconds = Mathf.FloorToInt(gameData.curTime);
-            int komma = (Mathf.RoundToInt(gameData.curTime * 100) - seconds * 100);
-            string formatted = "Time: " + seconds + "." + komma.ToString("D2");
-            text.text = formatted;
+            text.text = gameData.TimeFormat(gameData.curTime);
         }
 
         // Handle camera control
@@ -174,5 +171,23 @@ public class DogMovement : MonoBehaviour
         //check input device type and enable "gamepad" bool
         //var gamepad = Gamepad.current;
         //if (gamepad) { camInputVec *= addedSensitivity; Debug.Log("joyish"); }
+    }
+
+    public void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.name == "vacuum")
+        {
+            gameData.EndTimer();
+            gameData.SSGameOver();
+        }
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.name.ToLower() == "finish")
+        {
+            gameData.EndTimer(true);
+            gameData.SSLevelComplete();
+        }
     }
 }

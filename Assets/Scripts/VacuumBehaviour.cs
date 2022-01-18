@@ -13,6 +13,7 @@ public class VacuumBehaviour : MonoBehaviour
     };
 
     public AIState curState;
+    public DogMovement doggo;
     public Transform target;
     public float normalSpeed;
     public float speedUpSpeed;
@@ -33,6 +34,10 @@ public class VacuumBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (doggo.hasMoved && curState == AIState.Passive)
+        {
+            curState = AIState.Normal;
+        }
         if (curState != AIState.Passive)
         {
             agent.destination = target.position;
