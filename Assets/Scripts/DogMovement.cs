@@ -8,7 +8,8 @@ using TMPro;
 public class DogMovement : MonoBehaviour
 {
     public GameData gameData;
-    public TextMeshProUGUI text;
+    public TextMeshProUGUI timeText;
+    public TextMeshProUGUI objectiveText;
     public bool hasMoved = false;
 
     [Header("Movement settings")]
@@ -94,8 +95,9 @@ public class DogMovement : MonoBehaviour
         if (hasMoved)
         {
             gameData.StartTimer(Time.time);
+            objectiveText.enabled = false;
             gameData.Timer(Time.time);
-            text.text = gameData.TimeFormat(gameData.curTime);
+            timeText.text = gameData.TimeFormat(gameData.curTime);
         }
 
         // Handle camera control

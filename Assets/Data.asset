@@ -13,12 +13,13 @@ MonoBehaviour:
   m_Name: Data
   m_EditorClassIdentifier: 
   mixer: {fileID: 24100000, guid: 45112fb31b7e64f439e765ede31a561b, type: 2}
+  curWantedLevel: 1
   FOV: 60
-  sensitivity: 30
+  sensitivity: 6
   musicVol: 0
   soundVol: 0
-  curTime: 9.663844
-  startTime: 2.3027048
-  bestTime: 10.870727
-  endTime: 9.656866
+  curTime: 0
+  startTime: 0
+  bestTime: 0
+  endTime: 0
   curGameState: 1

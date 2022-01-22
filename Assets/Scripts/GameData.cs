@@ -94,20 +94,28 @@ public class GameData : ScriptableObject
 
     public void SSMainMenu()
     {
-        Cursor.lockState = CursorLockMode.None;
         SceneManager.LoadScene(0);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
 
     public void SSLevelComplete()
     {
-        Cursor.lockState = CursorLockMode.None;
         SceneManager.LoadScene(SceneManager.sceneCountInBuildSettings - 2);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
     public void SSGameOver()
     {
-        Cursor.lockState = CursorLockMode.None;
         SceneManager.LoadScene(SceneManager.sceneCountInBuildSettings - 1);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
+
+    public void SSPlayLevel()
+    {
+        SceneManager.LoadScene(curWantedLevel);
     }
 }
