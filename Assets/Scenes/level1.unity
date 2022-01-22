@@ -11149,7 +11149,7 @@ MonoBehaviour:
   gravity: 10
   maxVelChange: 3
   jumpHeight: 8
-  groundDistance: 0.1
+  groundDistance: 0.4
   sphereCastLength: 20
   sphereRadius: 0.2
   fillImage: {fileID: 1779534254}
